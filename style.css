@@ -2,9 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap");
 
 * {
-  box-sizing: border-box;
   margin: 0px;
-  padding: 2%;
+  padding: 1%;
 }
 
 body {
@@ -14,25 +13,26 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
+.container {
+  text-align: center;
+}
+
 .topo {
   background-color: antiquewhite;
   border-style: dashed;
-  display: flex;
-  flex-direction: column;
   align-items: center;
   text-align: center;
 }
 
-.historia {
-  background-color: antiquewhite;
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-  text-align: center;
-}
+/*.historia {
+  /*display: grid;*/
+/*grid-auto-flow: row;*/
+/*grid-template-columns: 1fr 1fr 1fr;*/
+/*text-align: center;*/
 
 .titulo-historia {
   text-align: left;
-  font-size: 40px;
+  font-size: 50px;
 }
 
 .paragrafo {
@@ -41,48 +41,33 @@ body {
 }
 
 .menu {
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   text-align: center;
-}
-
-@media only screen and (max-width: 600px) {
-  .menu {
-    display: block;
-  }
+  list-style: none;
+  gap: 2%;
 }
 
 .menu-item {
-  padding: 7%;
   font-size: larger;
   text-transform: uppercase;
   text-decoration: underline;
-}
-
-@media only screen and (max-width: 600px) {
-  .menu-item {
-    display: block;
-  }
+  align-items: center;
+  text-align: center;
 }
 
 .bolos-unitarios {
-  align-items: stretch;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 10px;
-  padding: 5%;
+  align-items: center;
+  padding: 2%;
   background-color: antiquewhite;
-  background-size: cover;
 }
 
 .infos {
-  padding-left: 10%;
+  list-style: none;
 }
 
 .foto-bolo {
-  width: 200px;
+  width: 300px;
 }
 
 .inicio-bolos {
@@ -94,7 +79,7 @@ body {
 
 .titulo-bolos {
   text-align: center;
-  text-size-adjust: 40px;
+  font-size: xx-large;
   text-decoration: underline;
 }
 .div-botao {
